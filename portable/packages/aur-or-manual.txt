@@ -1,0 +1,24 @@
+# Not in official Arch repos (or not confidently namable) -- check AUR first,
+# fall back to building from source. Package names in AUR change over time,
+# so treat every "aur/foo" below as a starting search term, not a guarantee.
+
+pfetch                  # aur/pfetch
+tex-fmt                 # aur/tex-fmt
+bun                     # aur/bun-bin, or install via the official bun.sh script
+libclang                # comes with aur/clang or official `clang` package
+superhtml               # aur/superhtml (zig-based HTML LSP) -- niche
+vscode                  # aur/visual-studio-code-bin (official repo has only "code" OSS builds in some distros)
+archipelago             # multi-game randomizer -- check aur/archipelago or pip install
+cataclysm-dda           # aur/cataclysm-dda or aur/cataclysm-dda-git
+ckan                    # aur/ckan (Kerbal Space Program mod manager)
+uzdoom                  # verify exact project name/source -- may be a personal zdoom fork
+vintagestory            # aur/vintagestory
+wheelwizard             # Mario Kart Wii tool -- check its GitHub releases directly
+vesktop                 # aur/vesktop-bin
+claude-code             # install via npm: `npm i -g @anthropic-ai/claude-code`, not a distro package
+dwm                     # aur/dwm, or build from source (suckless.org) -- you likely have local patches, check ~/.config or wherever your dwm source lives
+mango                   # wlroots-based compositor, github.com/DreamMaoMao/mango -- check AUR (e.g. aur/mango-git) or build from source
+noctalia-shell          # Quickshell-based desktop shell, github.com/noctalia-dev/noctalia-shell -- check AUR or build from source; also requires `quickshell` itself
+envypn-font             # obscure pixel font -- not packaged; download from its source repo
+bigblue-terminal-nerd   # nerd-fonts "BigBlueTerminal" patch -- download release asset from the nerd-fonts GitHub releases page
+departure-mono-nerd     # nerd-fonts "DepartureMono" patch -- same as above

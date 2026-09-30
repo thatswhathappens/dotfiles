@@ -1,0 +1,366 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+[aws]
+symbol = " "
+
+[azure]
+symbol = " "
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+unknown_symbol = "󰂑 "
+empty_symbol = "󰂎 "
+
+[buf]
+symbol = " "
+format = "with [$symbol]($style)"
+
+[bun]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[c]
+symbol = " "
+format = "via [$symbol($name)]($style)"
+
+[cpp]
+symbol = " "
+format = "via [$symbol($name)]($style)"
+
+[cmake]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[cobol]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[conda]
+symbol = " "
+
+[container]
+symbol = " "
+
+[crystal]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[dart]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[deno]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[direnv]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+symbol = " "
+
+[dotnet]
+symbol = " "
+format = "[$symbol(🎯 $tfm )]($style)"
+
+[elixir]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[elm]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[erlang]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[fennel]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[fortran]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = "󱇶 "
+
+[gleam]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = "  "
+
+[golang]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[gradle]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[haxe]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[helm]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[julia]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[kotlin]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[kubernetes]
+symbol = "󱃾 "
+
+[lua]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[maven]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+format = "via [$symbol]($style)"
+
+[mojo]
+symbol = "󰈸 "
+format = "with [$symbol]($style)"
+
+[nats]
+symbol = " "
+
+[netns]
+symbol = "󰛳 "
+
+[nim]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[ocaml]
+symbol = " "
+format = "via [$symbol(\\($switch_indicator$switch_name\\) )]($style)"
+
+[odin]
+symbol = "󰟢 "
+format = "via [$symbol]($style)"
+
+[opa]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[openstack]
+symbol = " "
+
+[os.symbols]
+AIX = " "
+AlmaLinux = " "
+Alpaquita = " "
+Alpine = " "
+ALTLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+Bluefin = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = " "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = " "
+InstantOS = " "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = " "
+OpenCloudOS = " "
+openEuler = " "
+openSUSE = " "
+OracleLinux = "󰺡 "
+PikaOS = " "
+Pop = " "
+Raspbian = " "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Redox = "󰀘 "
+RockyLinux = " "
+Solus = " "
+SUSE = " "
+Ubuntu = " "
+Ultramarine = " "
+Unknown = " "
+Uos = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[php]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+format = "via [$symbol($environment )]($style)"
+
+[pulumi]
+symbol = " "
+format = "via [$symbol$stack]($style)"
+
+[purescript]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[python]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[raku]
+symbol = "󱖊 "
+format = "via [$symbol]($style)"
+
+[red]
+symbol = "󱍼 "
+format = "via [$symbol]($style)"
+
+[rlang]
+symbol = "󰟔 "
+format = "via [$symbol]($style)"
+
+[ruby]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[rust]
+symbol = "󱘗 "
+format = "via [$symbol]($style)"
+
+[scala]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[shlvl]
+symbol = "󰹍 "
+
+[singularity]
+symbol = " "
+
+[solidity]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[spack]
+symbol = " "
+
+[status]
+symbol = " "
+
+[sudo]
+symbol = " "
+
+[swift]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[terraform]
+symbol = " "
+
+[vlang]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[typst]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[vagrant]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[xmake]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[zig]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[daml]
+format = "via [$symbol]($style)"
+
+[quarto]
+format = "via [$symbol]($style)"

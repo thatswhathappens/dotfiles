@@ -1,0 +1,286 @@
+[bar.default]
+center = []
+end = [
+    "text_233333",
+    "media",
+    "text5",
+    "text10",
+    "text9",
+    "cpu",
+    "text_4",
+    "ram",
+    "text_3",
+    "text_244444",
+    "clock",
+    "network"
+]
+font_family = "JetBrainsMono NF"
+margin_ends = 0
+padding = 6
+radius_bottom_left = 0
+radius_bottom_right = 0
+radius_top_left = 0
+radius_top_right = 0
+start = [ "workspaces", "text2", "active_window" ]
+thickness = 31
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "wallpaper"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 64
+    major_interval = 4
+    visible = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 176.0
+    box_width = 320.0
+    cx = 960.0
+    cy = 160.8125
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        clock_style = "digital"
+        color = "on_surface"
+        font_family = "JetBrainsMono NF"
+
+[location]
+address = "Columbus, GA"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@WL-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 476.5
+    cy = 426.64730834960938
+    output = "WL-1"
+    placement_height = 518.0
+    placement_width = 953.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[plugins]
+enabled = []
+
+[shell]
+font_family = "IBM Plex Sans"
+
+    [shell.launcher]
+    categories = false
+    compact = false
+
+    [shell.panel]
+    control_center_placement = "floating"
+    control_center_position = "top_right"
+    open_near_click_control_center = true
+
+    [shell.screenshot]
+    save_to_file = false
+    show_cursor = true
+
+[theme]
+builtin = "Gruvbox"
+community_palette = "GruvboxAlt"
+custom_palette = "test-mc"
+mode = "dark"
+source = "custom"
+
+[wallpaper]
+directory = "/home/ethan/Documents/walls"
+
+    [wallpaper.default]
+    path = "/home/ethan/Documents/walls/test.jpg"
+
+    [wallpaper.last]
+    path = "/home/ethan/Documents/walls/test.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/ethan/Documents/walls/test.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/ethan/Documents/walls/test.jpg"
+
+    [wallpaper.monitors.WL-1]
+    path = "/home/ethan/.cache/noctalia/mpvpaper/_home_ethan_Videos_PlayStation_2_System_Menu_Ambience_for_2_hours__Cxk1gI2sg3w__mp4.jpg"
+
+[weather]
+unit = "imperial"
+
+[widget.active_window]
+display = "text_only"
+max_length = 800
+
+[widget.clock]
+format = "{:%a %b %d - %H:%M}"
+
+[widget.cpu]
+show_glyph = false
+visualization = "none"
+
+[widget.media]
+enabled = true
+max_length = 255
+min_length = 100
+show_progress = true
+title_scroll = "on_hover"
+
+[widget.network]
+enabled = false
+show_label = false
+
+[widget.notifications]
+enabled = false
+
+[widget.ram]
+label_min_width = 48
+show_glyph = false
+visualization = "none"
+
+[widget.text10]
+font_family = "BigBlueTerm437 Nerd Font"
+interactive = false
+text = ""
+type = "text"
+
+[widget.text2]
+text = "|"
+type = "text"
+
+[widget.text5]
+interactive = false
+text = "|"
+type = "text"
+
+[widget.text9]
+interactive = false
+text = "CPU:"
+type = "text"
+
+[widget.text_233333]
+font_family = "BigBlueTerm437 Nerd Font"
+interactive = false
+text = ""
+type = "text"
+
+[widget.text_244444]
+interactive = false
+text = ""
+type = "text"
+
+[widget.text_3]
+interactive = false
+text = "|"
+type = "text"
+
+[widget.text_4]
+interactive = false
+text = "Mem:"
+type = "text"
+
+[widget.tray]
+drawer = true
+
+[widget.workspaces]
+empty_color = "outline"
+focused_color = "#B6C500"
+hide_when_empty = false
+occupied_color = "secondary"
+show_icons = false
+style = "minimal"

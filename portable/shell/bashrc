@@ -1,0 +1,43 @@
+# Portable rewrite of the Home Manager-generated ~/.bashrc
+# (originally produced from programs.bash / programs.starship / programs.zoxide
+# in home/home.nix). Requires: bash-completion, starship, zoxide, lazygit
+# all installed and on PATH via your distro's package manager.
+
+# Commands that should be applied only for interactive shells.
+[[ $- == *i* ]] || return
+
+HISTFILESIZE=100000
+HISTSIZE=10000
+
+shopt -s histappend
+shopt -s extglob
+shopt -s globstar
+shopt -s checkjobs
+
+alias -- cd=z
+alias -- cleanup='nh clean all'   # drop this line if you don't reinstall Nix's `nh`
+alias -- ls='eza --color=auto --icons=always'
+alias -- q=exit
+alias -- rebuild='nh os switch --update /etc/nixos'  # NixOS-only; remove if not using Nix anymore
+
+# bash-completion (path varies by distro, e.g. /usr/share/bash-completion/bash_completion)
+if [[ ! -v BASH_COMPLETION_VERSINFO ]]; then
+  for f in /usr/share/bash-completion/bash_completion /etc/profile.d/bash_completion.sh; do
+    [[ -f "$f" ]] && . "$f" && break
+  done
+fi
+
+function lg() {
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+    command lazygit "$@"
+    if [ -f "$LAZYGIT_NEW_DIR_FILE" ]; then
+      cd "$(cat "$LAZYGIT_NEW_DIR_FILE")"
+      rm -f "$LAZYGIT_NEW_DIR_FILE" > /dev/null
+    fi
+}
+
+if [[ $TERM != "dumb" ]]; then
+  eval "$(starship init bash --print-full-init)"
+fi
+
+eval "$(zoxide init bash)"

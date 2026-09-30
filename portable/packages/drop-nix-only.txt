@@ -1,0 +1,14 @@
+# These exist only because of Nix/NixOS itself, or are Nix tooling.
+# Once you're off NixOS there's nothing to install -- just don't reproduce them.
+
+home-manager                  # this whole exercise replaces it
+nvf                           # neovim-via-nix framework; see ../config/nvim/init.lua instead
+nix-ld                        # lets dynamically linked binaries work under Nix's non-FHS layout
+nixpkgs-review
+nix-eval-jobs
+nix-fast-build
+colmena
+nh                            # `nh os switch` / `nh clean` -- drop the `rebuild`/`cleanup` bash aliases too
+programs.nix-index-database.comma.enable   # the `,` run-without-installing command
+nix-index-database
+lixPackageSets                # the Lix implementation of Nix used in this config

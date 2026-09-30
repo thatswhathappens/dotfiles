@@ -1,0 +1,78 @@
+# Official repos (pacman -S), one guess per line.
+# Enable the multilib repo first for wine/steam 32-bit deps.
+
+# --- CLI utilities ---
+dnsmasq
+fortune-mod
+pv
+tealdeer
+tmux
+unzip
+wget
+zip
+git
+python
+vim
+wine              # needs [multilib] enabled
+asciinema
+alacritty
+btop
+eza
+fastfetch
+fzf
+github-cli        # provides `gh`
+htop
+kitty
+nnn
+starship
+zoxide
+lazygit
+nodejs
+distrobox
+
+# --- Media / creative ---
+kolourpaint       # KDE app
+krita
+mpv
+obs-studio
+vlc
+
+# --- Games (mostly straightforward) ---
+dolphin-emu
+mgba-qt
+openttd
+prismlauncher
+
+# --- Virtualisation / containers ---
+qemu-full
+libvirt
+virt-manager
+podman
+flatpak
+
+# --- Desktop / system ---
+plasma-desktop    # or the `plasma` group for the full DE
+bluez
+bluez-utils
+networkmanager
+openssh
+cups
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
+slurp
+plymouth
+linux-zen
+linux-zen-headers
+steam             # needs [multilib]
+
+# --- Fonts (some may need ttf- prefix on your distro) ---
+ttf-jetbrains-mono-nerd
+ttf-iosevka-nerd
+ttf-cascadia-code-nerd
+ttf-firacode-nerd     # closest official match to "fira mono" nerd variant
+ibm-plex-fonts
+otf-open-sans
