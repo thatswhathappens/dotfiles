@@ -17,6 +17,17 @@ files here are byte-identical to what's live on disk today:
 | `config/noctalia/config.toml` | `~/.config/noctalia/config.toml` |
 | `config/starship.toml` | `~/.config/starship.toml` |
 
+These three were never managed by Nix at all; they are copies of the live
+files, added so the rebuild does not lose them:
+
+| File here | Copy to |
+|---|---|
+| `config/noctalia/palettes/test-mc.json` | `~/.config/noctalia/palettes/test-mc.json` (the custom palette `config.toml` selects) |
+| `config/alacritty/alacritty.toml` | `~/.config/alacritty/alacritty.toml` |
+| `config/vim/vimrc` | `~/.vimrc` |
+
+See `../CACHYOS-SETUP.md` for the full step-by-step rebuild brief.
+
 ## What had to be rewritten
 
 - `shell/bashrc` -> `~/.bashrc` -- Home Manager generated this from

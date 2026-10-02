@@ -1,0 +1,12 @@
+set number 
+set laststatus=2
+call plug#begin()
+ Plug 'itchyny/lightline.vim'
+call plug#end()
+let g:lightline = {
+	\ 'colorscheme': 'powerlineish',
+      \ }
+syntax on
+set noshowmode
+set mouse=a
+set autoindent
